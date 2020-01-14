@@ -1,4 +1,6 @@
 
+
+
 <table align="center" width="700" bgcolor="red" border="1" id="table">
 
 <th>Lp. </th>
@@ -13,11 +15,14 @@
       <th>  EDYTUJ    </th>
 
 
- 
+  <?php  showContractor(); ?>
    
 
 </table>
 
 
-<a href="">1. Dodawanie kontrahenta </a>
+<a href="index.php?add">1. Dodawanie kontrahenta </a>
 
+
+
+?>

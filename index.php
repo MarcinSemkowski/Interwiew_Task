@@ -1,3 +1,8 @@
+<?php 
+include("functions.php");
+
+?>
+
 <!DOCTYPE HTML>
 <html lang="pl">
 
@@ -38,6 +43,33 @@
         if(isset($_GET['con'])){
             include("contractor.php"); 
          }
+      if (isset($_GET['add'])) {
+       include("add_contractor.php");
+      }
+
+
+
+         // adding contractor
+          if(isset($_POST['add'])){
+          $nip = $_POST['nip'];
+          $region = $_POST['r'];
+          $nazwa = $_POST['n'];
+          if(isset($_POST['vat'])){
+            $vat = true;
+          }else{
+            $vat = false;
+          }
+          
+          $street = $_POST['st'];
+          $houseNr = $_POST['nrH'];
+          $nrFlat = $_POST['nr_f'];
+
+           
+             addContractor($nip,$region,$nazwa,$vat,$street,$houseNr,$nrFlat);
+
+
+          }
+
         
         ?>
     </div>
