@@ -43,5 +43,42 @@ while ($mysql_row = mysqli_fetch_array($db_query)) {
 
 
 
+function showContractor(){
+global $con;
+
+
+$query = "SELECT * FROM contractor";
+
+$db_query = mysqli_query($con,$query);
+
+while ($mysql_row = mysqli_fetch_array($db_query)) {
+	$id = $mysql_row['ID'];
+	$r = $mysql_row['REGON'];
+	$name = $mysql_row['NAZWA'];
+	$vat = $mysql_row['VAT'];
+	$street = $mysql_row['ULICA'];
+	$numberHouse = $mysql_row['NUMER_DOMU'];
+	$numberFlat = $mysql_row['NUMER_MIESZKANIA'];
+ 
+ echo "<tr>
+
+ <td>$id</td>
+ <td>$name</td>
+ <td>$vat</td>
+ <td>$street</td>
+ <td>$numberHouse</td>
+ <td>$numberFlat</td>
+
+
+ </tr>";
+
+
+}
+
+} 
+
+
+
+
 
 ?>
