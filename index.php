@@ -8,7 +8,7 @@
     <meta name="description" content="JS Memory Game inspired by Gewnt">
     
     <meta http-equiv="X-Ua-Compatibile" content="IE=edge.chrome=1">
-     
+    <link href="style.css" type="text/css" rel="stylesheet" />
     </head>
 
 <body>
@@ -23,7 +23,9 @@
  </ol>     
     
     </div>
-    <div id="Prawy"></div>
+    <div id="Prawy">
+     
+    </div>
     
     <div style="clear:both"></div>
     

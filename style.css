@@ -1,0 +1,13 @@
+body{
+background-color: grey;
+}
+
+#Lewy{
+ float: left;
+     
+}
+
+#Prawy{
+    float: left;
+    margin-left: 900px;
+}
