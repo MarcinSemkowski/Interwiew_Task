@@ -16,7 +16,7 @@
     <div id="Lewy">
      <ol type="a">
     <li><a href="">Różne kontrolki HTML </a></li>
-         <li><a href="">Tabela Pracowników  </a></li>
+         <li><a href="index.php?emp">Tabela Pracowników  </a></li>
          <li><a href="">Tabela Faktur VAT  </a></li>
          <li><a href="">Tabela Delegacji BD  </a></li>
          <li>  <a href="">Dane Kontrahentów   </a></li>
@@ -24,7 +24,12 @@
     
     </div>
     <div id="Prawy">
-     
+     <?php
+         if(isset($_GET['emp'])){
+            include("employees.php"); 
+         }
+        
+        ?>
     </div>
     
     <div style="clear:both"></div>
