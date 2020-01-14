@@ -43,6 +43,8 @@ while ($mysql_row = mysqli_fetch_array($db_query)) {
 
 
 
+
+
 function showContractor(){
 global $con;
 
@@ -77,7 +79,8 @@ while ($mysql_row = mysqli_fetch_array($db_query)) {
  <td>$street</td>
  <td>$numberHouse</td>
  <td>$numberFlat</td>
-
+ <td><a href='index.php?edit=$id'> Edit</a></td>
+  <td><a href='index.php?delete=$id'> Delete</a></td>
 
  </tr>";
 
@@ -85,6 +88,53 @@ while ($mysql_row = mysqli_fetch_array($db_query)) {
 }
 
 }
+
+
+function showContractorByParagraph(){
+global $con;
+
+
+$query = "SELECT * FROM contractor";
+
+$db_query = mysqli_query($con,$query);
+
+while ($mysql_row = mysqli_fetch_array($db_query)) {
+	$id = $mysql_row['ID'];
+	$n = $mysql_row['NIP'];
+	$r = $mysql_row['REGON'];
+	$name = $mysql_row['NAZWA'];
+	$vat = $mysql_row['VAT'];
+     if($vat == 1){
+     	$vat = "tak";
+     }else{
+     	$vat = "nie";
+     }
+
+	$street = $mysql_row['ULICA'];
+	$numberHouse = $mysql_row['NUMER_DOMU'];
+	$numberFlat = $mysql_row['NUMER_MIESZKANIA'];
+ 
+ echo "
+
+ <p>$id</p>
+ <p>$n</p>
+ <p>$r</p>
+ <p>$name</p>
+ <p>$vat</p>
+ <p>$street</p>
+ <p>$numberHouse</p>
+ <p>$numberFlat</p>
+ <p>UWAGI</p>
+
+ ";
+
+
+}
+
+}
+
+
+
 
 
 

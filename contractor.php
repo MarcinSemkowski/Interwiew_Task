@@ -11,8 +11,8 @@
     <th>  ULICA    </th>
     <th>  NUMER DOMU   </th>
     <th>  NUMER MIESZKANIA    </th>
-     <th>  USUŃ    </th>
-      <th>  EDYTUJ    </th>
+     <th>   EDYTUJ   </th>
+      <th>   USUŃ   </th>
 
 
   <?php  showContractor(); ?>
@@ -25,4 +25,4 @@
 
 
 
-?>
+

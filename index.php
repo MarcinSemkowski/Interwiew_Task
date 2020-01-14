@@ -20,7 +20,7 @@ include("functions.php");
     
     <div id="Lewy">
      <ol type="a">
-    <li><a href="">Różne kontrolki HTML </a></li>
+    <li><a href="index.php?H">Różne kontrolki HTML </a></li>
          <li><a href="index.php?emp">Tabela Pracowników  </a></li>
          <li><a href="index.php?vat">Tabela Faktur VAT  </a></li>
          <li><a href="index.php?BD">Tabela Delegacji BD  </a></li>
@@ -45,6 +45,9 @@ include("functions.php");
          }
       if (isset($_GET['add'])) {
        include("add_contractor.php");
+      }
+         if (isset($_GET['H'])) {
+       include("HTML.php");
       }
 
 

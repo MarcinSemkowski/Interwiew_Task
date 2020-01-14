@@ -1,7 +1,4 @@
-<?php 
-include("functions.php");
 
-?>
 
 <table align="center" width="700" bgcolor="red" border="1" id="table">
 
