@@ -18,7 +18,7 @@
     <li><a href="">Różne kontrolki HTML </a></li>
          <li><a href="index.php?emp">Tabela Pracowników  </a></li>
          <li><a href="index.php?vat">Tabela Faktur VAT  </a></li>
-         <li><a href="">Tabela Delegacji BD  </a></li>
+         <li><a href="index.php?BD">Tabela Delegacji BD  </a></li>
          <li>  <a href="">Dane Kontrahentów   </a></li>
  </ol>     
     
@@ -30,6 +30,9 @@
          }
         if(isset($_GET['vat'])){
             include("VAT.php"); 
+         }
+         if(isset($_GET['BD'])){
+            include("BD.php"); 
          }
         
         ?>
