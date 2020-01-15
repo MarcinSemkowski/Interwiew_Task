@@ -55,6 +55,13 @@ if(isset($_POST['addVat'])){
          if (isset($_GET['H'])) {
        include("HTML.php");
       }
+        if (isset($_GET['edit'])) {
+         
+           $updateId = $_GET['edit'];
+            showUpdateContractor($updateId);
+      }else if(isset($_GET['add'])){
+            include("add_contrator.php");
+        }
 
 
 
@@ -78,6 +85,28 @@ if(isset($_POST['addVat'])){
 
 
           }
+        
+        
+        //update contractor 
+        if(isset($_POST['update'])){
+            $nip = $_POST['nip'];
+          $region = $_POST['r'];
+          $nazwa = $_POST['n'];
+          if(isset($_POST['vat'])){
+            $vat = true;
+          }else{
+            $vat = false;
+          }
+          
+          $street = $_POST['st'];
+          $houseNr = $_POST['nrH'];
+          $nrFlat = $_POST['nr_f'];
+            $id = $_POST['updateId'];
+        
+            updateContractor($id,$nip,$region,$nazwa,$vat,$street,$houseNr,$nrFlat);
+        
+        }
+        
 
         
         ?>
