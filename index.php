@@ -51,18 +51,16 @@ if(isset($_POST['addVat'])){
          }
       if (isset($_GET['add'])) {
        include("add_contractor.php");
-      }
-         if (isset($_GET['H'])) {
-       include("HTML.php");
-      }
-        if (isset($_GET['edit'])) {
+      }else if (isset($_GET['edit'])) {
          
            $updateId = $_GET['edit'];
             showUpdateContractor($updateId);
-      }else if(isset($_GET['add'])){
-            include("add_contrator.php");
-        }
+      }
 
+         if (isset($_GET['H'])) {
+       include("HTML.php");
+      }
+       
 
 
          // adding contractor
@@ -107,7 +105,11 @@ if(isset($_POST['addVat'])){
         
         }
         
-
+        // delete contractor
+        if(isset($_GET['delete'])){
+            $delId = $_GET['delete'];
+            deleteContractor($delId);
+        }
         
         ?>
     </div>

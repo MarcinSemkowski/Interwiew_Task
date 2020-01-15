@@ -226,5 +226,21 @@ global $con;
 }
 
 
+function deleteContractor($id){
+ global $con;
+  $deleteQuery = "DELETE FROM contractor WHERE ID = '$id'";    
+
+   if($run_con = mysqli_query($con,$deleteQuery)){
+     echo "<script>alert('You delete  Contractor !')</script>";
+        echo "<script>window.open('index.php?con','_self')</script>";
+   }else{
+     echo "".mysqli_error($con);
+       
+   }
+
+
+}
+
+
 
 ?>
