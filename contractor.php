@@ -1,7 +1,7 @@
 
 
 
-<table align="center" width="700" bgcolor="red" border="1" id="table">
+<table align="center" width="700"  border="1" id="table">
 
 <th>Lp. </th>
 <th> NIP   </th>

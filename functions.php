@@ -93,6 +93,47 @@ while ($mysql_row = mysqli_fetch_array($db_query)) {
 }
 
 
+function showContractorByParagraph(){
+global $con;
+
+
+$query = "SELECT * FROM contractor";
+
+$db_query = mysqli_query($con,$query);
+
+while ($mysql_row = mysqli_fetch_array($db_query)) {
+	$id = $mysql_row['ID'];
+	$n = $mysql_row['NIP'];
+	$r = $mysql_row['REGON'];
+	$name = $mysql_row['NAZWA'];
+	$vat = $mysql_row['VAT'];
+     if($vat == 1){
+     	$vat = "tak";
+     }else{
+     	$vat = "nie";
+     }
+
+	$street = $mysql_row['ULICA'];
+	$numberHouse = $mysql_row['NUMER_DOMU'];
+	$numberFlat = $mysql_row['NUMER_MIESZKANIA'];
+ 
+ echo "
+
+<p>NIP : $n</p>
+<p>REGON: $r  </p>
+<p>NAZWA: $name </p>
+<p>DATA POWSTANIA:  </p>
+<p>ULICA: $street </p>
+<p>NUMER DOMU: $numberHouse </p>
+<p>NUMER MIESZKANIA: $numberFlat</p>
+<p>UWAGI: </p>
+
+ ";
+
+
+}
+
+}
 
 
 

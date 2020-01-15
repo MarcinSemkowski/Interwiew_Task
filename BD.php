@@ -1,6 +1,6 @@
 
 
-<table align="center" width="700" bgcolor="red" border="1" id="table">
+<table align="center" width="700"  border="1" id="table">
 
 <th>Lp. </th>
 <th> Imię i Nazwisko  </th>

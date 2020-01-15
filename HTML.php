@@ -2,15 +2,11 @@
 
 
 
-<p>NIP :</p>
-<p>REGON: </p>
-<p>NAZWA: </p>
-<p>DATA POWSTANIA: </p>
-<p>ULICA </p>
-<p>NUMER DOMU: </p>
-<p>NUMER MIESZKANIA:</p>
-<p>UWAGI: </p>
+<?php 
 
+showContractorByParagraph()
+
+?>
 
 
 
