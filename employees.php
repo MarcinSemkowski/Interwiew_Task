@@ -1,4 +1,4 @@
-<table align="center" width="700" bgcolor="red" border="1">
+<table align="center" width="700"  border="1">
 
 <th>Lp. </th>
 <th>Imię: </th>
@@ -6,7 +6,7 @@
 <th>Stanowisko: </th> 
 <th>Data zatrudnienia:  </th>
     <th>Ilość dni urlopowych:  </th>
-<tr align="center">
+<tr align="center" id="1">
     <td>1</td>
     <td> Patryk  </td>
     <td>Kozłowski </td>
@@ -15,7 +15,7 @@
     <td>5</td>
        </tr>
     
-<tr align="center">
+<tr align="center" id="2">
     <td>2</td>
     <td> Fabian  </td>
     <td>Ciesielski </td>
@@ -25,7 +25,7 @@
        </tr>
     
     
-    <tr align="center">
+    <tr align="center" id="3">
     <td>3</td>
     <td>Antoni  </td>
     <td>Ziółkowski </td>
@@ -35,7 +35,7 @@
        </tr>
     
     
-    <tr align="center">
+    <tr align="center"id="4">
     <td>4</td>
     <td> Julia  </td>
     <td>Król </td>
@@ -46,7 +46,7 @@
     
     
     
-    <tr align="center">
+    <tr align="center" id="5">
     <td>5</td>
     <td> Wiktoria </td>
     <td> Szymańska </td>
@@ -58,3 +58,13 @@
 
     
 </table>
+
+
+ 
+    
+   
+
+     <input type="color" id="color1"/>
+    <input type="color" id="color2"/>    
+<input type="button" value="choose" onclick="changeColor()" />
+    

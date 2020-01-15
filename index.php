@@ -1,6 +1,12 @@
 <?php 
+session_start();
 include("functions.php");
 
+
+if(isset($_POST['addVat'])){
+    $vat = $_POST['VAT'];
+    $_SESSION['VAT'] = $vat;
+}
 ?>
 
 <!DOCTYPE HTML>
@@ -78,6 +84,10 @@ include("functions.php");
     </div>
     
     <div style="clear:both"></div>
-    <script src="script.js"></script>
+    
+    
+     <script src="jquery-3.2.1.min.js"></script>
+           <script src="script.js"></script> 
+    
     </body>
 </html>

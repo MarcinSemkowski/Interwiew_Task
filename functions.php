@@ -4,6 +4,10 @@ $con = mysqli_connect("localhost","root","","InterQ");
 
 
 
+
+
+
+
 function getAllBD(){
 
 global $con;

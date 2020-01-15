@@ -1,9 +1,3 @@
-<?php
-
-showContractorByParagraph()
-
-
-?>
 
 
 <select>
@@ -19,9 +13,9 @@ showContractorByParagraph()
 
 </select>
 
+<form action="index.php" method="post">
 
-
-<select>
+<select name="VAT">
 
 <option>Vat:</option>
 <option>ZW</option>
@@ -33,7 +27,9 @@ showContractorByParagraph()
     
 
 </select>
-
+<input type="submit" name="addVat" value="Wybierz Vat" />
+</form>    
+    
 <ol type="1">
 <li> Element</li>
     <li> Element</li>
