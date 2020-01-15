@@ -23,7 +23,7 @@ if(isset($_POST['addVat'])){
     </head>
 
 <body>
-    
+    <h1 id="Title">Zadanie zdalne e-MSI</h1>
     <div id="Lewy">
      <ol type="a">
     <li><a href="index.php?H">Różne kontrolki HTML </a></li>

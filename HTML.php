@@ -1,5 +1,20 @@
 
 
+
+
+<p>NIP :</p>
+<p>REGON: </p>
+<p>NAZWA: </p>
+<p>DATA POWSTANIA: </p>
+<p>ULICA </p>
+<p>NUMER DOMU: </p>
+<p>NUMER MIESZKANIA:</p>
+<p>UWAGI: </p>
+
+
+
+
+
 <select>
 <option>Kolory:</option>
 <option  style="background-color:green; color:white">Zielony</option>
@@ -13,7 +28,10 @@
 
 </select>
 
-<form action="index.php" method="post">
+<br/>
+<br/>
+
+<form action="index.php?vat" method="post">
 
 <select name="VAT">
 
@@ -27,7 +45,7 @@
     
 
 </select>
-<input type="submit" name="addVat" value="Wybierz Vat" />
+<input type="submit" name="addVat" value="Wybierz Vat"  /> Domyślny wat to 0%
 </form>    
     
 <ol type="1">
